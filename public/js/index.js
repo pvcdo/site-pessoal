@@ -9,7 +9,7 @@ function abreQr(img){
 
     div_img.style.width = '300px'
     div_img.style.height = '300px'
-    div_img.style.backgroundImage = `url("public/img/qrcode-${img}.png")`
+    div_img.style.backgroundImage = `url("/img/qrcode-${img}.png")`
     div_img.style.backgroundRepeat = 'no-repeat'//*/
     div_img.style.backgroundPosition = 'center'
     div_img.style.backgroundColor = '#fff'
