@@ -13,11 +13,17 @@ app.engine('handlebars',exphbs.engine())
 app.set('view engine','handlebars')
 
 app.get('/about',(req,res)=>{
-  res.render('about')
+  const pagina = {
+    about: true
+  }
+  res.render('about', {pagina})
 })
 
 app.get('/blog',(req,res)=>{
-  res.render('blog')
+  const pagina = {
+    blog: true
+  }
+  res.render('blog',{pagina})
 })
 
 app.get('/contact',(req,res)=>{
