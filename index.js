@@ -14,28 +14,42 @@ app.set('view engine','handlebars')
 
 app.get('/about',(req,res)=>{
   const pagina = {
-    about: true
+    about: true,
+    active: 'active'
   }
   res.render('about', {pagina})
 })
 
 app.get('/blog',(req,res)=>{
   const pagina = {
-    blog: true
+    blog: true,
+    active: 'active'
   }
   res.render('blog',{pagina})
 })
 
 app.get('/contact',(req,res)=>{
-  res.render('contact')
+  const pagina = {
+    contact: true,
+    active: 'active'
+  }
+  res.render('contact',{pagina})
 })
 
 app.get('/docs',(req,res)=>{
-  res.render('docs')
+  const pagina = {
+    docs: true,
+    active: 'active'
+  }
+  res.render('docs',{pagina, layout: 'docs'})
 })
 
 app.get('/projects',(req,res)=>{
-  res.render('projects')
+  const pagina = {
+    projects: true,
+    active: 'active'
+  }
+  res.render('projects',{pagina})
 })
 
 app.get('/',(req,res)=>{
