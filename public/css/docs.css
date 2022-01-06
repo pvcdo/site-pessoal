@@ -1,0 +1,84 @@
+:root{
+    --larg-aside: 234px;
+    --margem-esquerda-main: calc(var(--larg-aside) + 60px);
+}
+
+body{
+    margin:0;
+}
+
+#container{
+    display: flex;
+    margin:0;
+}
+
+/*esconder o aside para width device menor que 1025px*/
+aside{
+    margin:0;
+    width:var(--larg-aside);
+    background-color:#333333;
+    color:#FFF;
+    height: 100vh;
+    position: fixed;
+    padding: 10px; 
+}
+
+aside a{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+aside a.home{
+    font-size: 1.5rem;
+}
+
+aside a:hover{
+    color: white;
+}
+
+
+main{
+    margin: 30px 60px 30px var(--margem-esquerda-main);
+}
+
+#notas-de-aula, div{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.botoes-mov{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 90px;
+    justify-content: space-between;
+}
+
+.botao-mov{
+    width: 40px;
+    height: 40px;
+    background-color: #8ad5d8;
+    border:none;
+}
+
+.botoes-mov a{
+    text-decoration: none;
+    color:black;
+}
+
+h3{
+    margin-left: 15px;
+}
+
+p{
+    margin-left: 30px;
+}
+
+.inativo p{
+    color: grey;
+    text-decoration: line-through;
+}
+
