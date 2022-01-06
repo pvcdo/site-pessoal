@@ -23,6 +23,11 @@ aside{
     padding: 10px; 
 }
 
+aside div.back{
+    display: flex;
+    flex-direction: column;
+}
+
 aside a{
     font-weight: 700;
     color: white;
@@ -31,6 +36,10 @@ aside a{
 
 aside a.home{
     font-size: 1.5rem;
+}
+
+aside a.docs{
+    font-size: 1.2rem;
 }
 
 aside a:hover{

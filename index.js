@@ -29,7 +29,15 @@ app.get('/about',(req,res)=>{
     about: true,
     active: 'active'
   }
-  res.render('about', {pagina})
+
+  const certificados=[
+    {
+      titulo: 'React - States Effects',
+      imagem: 'https://drive.google.com/uc?export=view&id=1Pd74LrQigrUry3Kc0MRlQKDKtM-i_iPG',
+      descricao: 'Aprendi a trabalhar com os 2 principais hooks do React: useState e useEffects para criação de componentes ainda mais inteligentes.'
+    }
+  ]
+  res.render('about', {pagina, certificados})
 })
 
 app.get('/blog',(req,res)=>{
