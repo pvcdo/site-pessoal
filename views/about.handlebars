@@ -1,10 +1,24 @@
 <h1>About</h1>
 
-<div class="lista-certificados">
-    {{#each certificados}}
-        <h4>{{this.titulo}}</h4>
-    {{/each}}
-</div>
-<div class="img-cert">
+<h2>Certificates</h2>
 
+<div class="row">
+    <div class="certificado col-md-6">
+        {{#each certificados}}
+            <div id="cert-{{this.id}}">
+                <p onmouseover="abreCert({{this.imagem}},{{this.descricao}})">{{this.titulo}}</p>
+            </div>
+        {{/each}} 
+    </div>
+    <div class="col-md-6">
+        <div id="img-cert">
+            
+        </div>
+        <div id="desc-cert">
+            <p>
+                
+            </p>
+        </div>
+    </div>
 </div>
+   

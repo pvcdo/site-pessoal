@@ -21,3 +21,13 @@ function fechaQr(img){
     div_img.style.backgroundImage = ''
     div_img.style.backgroundColor = "#212529"//*/
 }
+
+function abreCert(imagem,descricao){
+    const img_cert = document.getElementById('img-cert')
+    const desc_cert = document.getElementById('desc-cert')
+    
+    const img_append = document.createElement('img')
+    img_append = document.src = imagem
+
+    img_cert.appendChild()
+}
