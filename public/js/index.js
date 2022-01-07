@@ -26,10 +26,9 @@ function abreCert(id,imagem,descricao){
     const img_cert = document.getElementById('img-cert')
     const desc_cert = document.getElementById('desc-cert').children[0]
     
-    const img_append = document.createElement('object')
+    const img_append = document.createElement('iframe')
     img_append.id = `img-cert-${id}`
-    img_append.data = imagem
-    img_append.type = 'application/pdf'
+    img_append.src = 'public/certificados/DIO/React Components.pdf'
     img_append.style.width = '640px'
     img_append.style.height = '480px'
 
