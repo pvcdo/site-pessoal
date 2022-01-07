@@ -22,12 +22,27 @@ function fechaQr(img){
     div_img.style.backgroundColor = "#212529"//*/
 }
 
-function abreCert(imagem,descricao){
+function abreCert(id,imagem,descricao){
     const img_cert = document.getElementById('img-cert')
-    const desc_cert = document.getElementById('desc-cert')
+    const desc_cert = document.getElementById('desc-cert').children[0]
     
-    const img_append = document.createElement('img')
-    img_append = document.src = imagem
+    const img_append = document.createElement('object')
+    img_append.id = `img-cert-${id}`
+    img_append.data = imagem
+    img_append.type = 'application/pdf'
+    img_append.style.width = '640px'
+    img_append.style.height = '480px'
 
-    img_cert.appendChild()
+    desc_cert.innerHTML = descricao
+
+    img_cert.appendChild(img_append)
+}
+
+function fechaCert(id){
+    const img_cert = document.getElementById('img-cert')
+    const desc_cert = document.getElementById('desc-cert').children[0]
+
+    desc_cert.innerHTML = ''
+
+    img_cert.removeChild(document.getElementById(`img-cert-${id}`))
 }

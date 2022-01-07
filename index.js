@@ -34,19 +34,7 @@ app.get('/about',(req,res)=>{
     {
       id:1,
       titulo: 'React - States Effects',
-      imagem: 'https://drive.google.com/uc?export=view&id=1Pd74LrQigrUry3Kc0MRlQKDKtM-i_iPG',
-      descricao: 'Aprendi a trabalhar com os 2 principais hooks do React: useState e useEffects para criação de componentes ainda mais inteligentes.'
-    },
-    {
-      id:2,
-      titulo: 'React - States Effects',
-      imagem: 'https://drive.google.com/uc?export=view&id=1Pd74LrQigrUry3Kc0MRlQKDKtM-i_iPG',
-      descricao: 'Aprendi a trabalhar com os 2 principais hooks do React: useState e useEffects para criação de componentes ainda mais inteligentes.'
-    },
-    {
-      id:3,
-      titulo: 'React - States Effects',
-      imagem: 'https://drive.google.com/uc?export=view&id=1Pd74LrQigrUry3Kc0MRlQKDKtM-i_iPG',
+      imagem: 'https://drive.google.com/file/d/1Pd74LrQigrUry3Kc0MRlQKDKtM-i_iPG/view?usp=sharing',
       descricao: 'Aprendi a trabalhar com os 2 principais hooks do React: useState e useEffects para criação de componentes ainda mais inteligentes.'
     },
   ]

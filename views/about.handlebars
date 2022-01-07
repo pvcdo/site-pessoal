@@ -6,19 +6,20 @@
     <div class="certificado col-md-6">
         {{#each certificados}}
             <div id="cert-{{this.id}}">
-                <p onmouseover="abreCert({{this.imagem}},{{this.descricao}})">{{this.titulo}}</p>
+                <p 
+                    onmouseover="abreCert('{{this.id}}','{{this.imagem}}','{{this.descricao}}')"
+
+                    onmouseleave="fechaCert('{{this.id}}')"
+                >
+                    {{this.titulo}}
+                </p>
             </div>
         {{/each}} 
     </div>
     <div class="col-md-6">
-        <div id="img-cert">
-            
-        </div>
-        <div id="desc-cert">
-            <p>
-                
-            </p>
-        </div>
+        
+        <div id="img-cert"></div>
+        <div id="desc-cert"><p></p></div>
     </div>
 </div>
    
