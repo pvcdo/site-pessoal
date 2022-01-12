@@ -1,6 +1,6 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
-//const pdfjs = require('pdfjs-dist')
+const path = require('path')
 
 const app = express()
 
@@ -35,7 +35,7 @@ app.get('/about',(req,res)=>{
     {
       id:1,
       titulo: 'React - States Effects',
-      imagem: 'https://drive.google.com/file/d/1Pd74LrQigrUry3Kc0MRlQKDKtM-i_iPG/view?usp=sharing',
+      url: 'C:/Users/pr114067/Desktop/Paulo/site-pessoal/public/certificados/DIO/React - States Effects.pdf', //path.join(__dirname,'public/certificados/DIO/React - States Effects.pdf'),
       descricao: 'Aprendi a trabalhar com os 2 principais hooks do React: useState e useEffects para criação de componentes ainda mais inteligentes.'
     },
   ]

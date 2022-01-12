@@ -1,10 +1,9 @@
 function abreQr(img){
 
-    //console.log('Falta implementar corretamente esta função')
     const div_img = document.getElementById(`img-qrcode`)
     
     const img_append = document.createElement('img')
-    img_append.src = `public/img/qrcode-${img}`//`./img/qrcode-${img}.png`
+    img_append.src = `public/img/qrcode-${img}.png`//`./img/qrcode-${img}.png`
     img_append.alt = `QR code do ${img}`
 
     div_img.style.width = '300px'
@@ -16,32 +15,63 @@ function abreQr(img){
 }
 
 function fechaQr(img){
-    //console.log('Falta implementar corretamente esta função')/*
+    
     const div_img = document.getElementById(`img-qrcode`)
     div_img.style.backgroundImage = ''
     div_img.style.backgroundColor = "#212529"//*/
 }
 
-function abreCert(id,imagem,descricao){
-    const img_cert = document.getElementById('img-cert')
-    const desc_cert = document.getElementById('desc-cert').children[0]
+// EXIBIR CERTIFICADOS NA PÁGINA ABOUT
+// UTILIZANDO PDF.JS
+
+function abreCert(id,url_,descricao){
+    pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
+
+    const url = url_
     
-    const img_append = document.createElement('iframe')
-    img_append.id = `img-cert-${id}`
-    img_append.src = 'public/certificados/DIO/React Components.pdf'
-    img_append.style.width = '640px'
-    img_append.style.height = '480px'
+    let pdfDoc = null,
+        pageNum = 1,
+        pageIsRendering = false,
+        pageNumIsPending = null;
 
-    desc_cert.innerHTML = descricao
+    const scale = 1.5,
+        canvas = document.querySelector('#pfd-render'),
+        ctx = canvas.getContext('2d');
 
-    img_cert.appendChild(img_append)
-}
 
-function fechaCert(id){
-    const img_cert = document.getElementById('img-cert')
-    const desc_cert = document.getElementById('desc-cert').children[0]
+    // Renderizar a página
 
-    desc_cert.innerHTML = ''
+        const renderPage = num => {
+            pageIsRendering = true
 
-    img_cert.removeChild(document.getElementById(`img-cert-${id}`))
-}
+            pdfDoc.getPage(num).then(page => {
+                const viewport = page.getViewport({scale})
+
+                canvas.height = viewport.height
+                canvas.width = viewport.width
+
+                const renderCtx = {
+                    canvasContext: ctx,
+                    viewport
+                }
+
+                page.render(renderCtx).promise.then(() => {
+                    pageIsRendering = false;
+                    if(pageNumIsPending !== null){
+                        renderPage(pageNumIsPending);
+                        pageNumIsPending = null;
+                    }
+                })
+            })
+        }
+
+    // Pegar documento
+        
+            const loadingTask = pdfjsLib.getDocument(url)
+            loadingTask.promise.then(pdfDoc_ => {
+                pdfDoc = pdfDoc_
+                
+                //renderPage(pageNum)
+                //console.log('função de página capturada')
+            })
+    }

@@ -7,7 +7,7 @@
         {{#each certificados}}
             <div id="cert-{{this.id}}">
                 <p 
-                    onmouseover="abreCert('{{this.id}}','{{this.imagem}}','{{this.descricao}}')"
+                    onmouseover="abreCert('{{this.id}}','{{this.url}}','{{this.descricao}}')"
 
                     onmouseleave="fechaCert('{{this.id}}')"
                 >
@@ -17,9 +17,9 @@
         {{/each}} 
     </div>
     <div class="col-md-6">
-        
-        <div id="img-cert"></div>
-        <div id="desc-cert"><p></p></div>
+        <canvas id="pfd-render">paulo</canvas>
+        <p id="desc-cert"></p>
     </div>
 </div>
-   
+
+<script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
