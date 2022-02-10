@@ -1,4 +1,6 @@
-alert('Necessário restringir a API Key no Google Cloud Platform')
+if(location.pathname === '/'){
+    alert('Necessário restringir a API Key no Google Cloud Platform')
+}
 
 function abreQr(img){
 

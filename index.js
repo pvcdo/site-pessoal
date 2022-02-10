@@ -31,14 +31,8 @@ app.get('/about',(req,res)=>{
     active: 'active'
   }
 
-  const certificados=[
-    {
-      id:1,
-      titulo: 'React - States Effects',
-      url: 'C:/Users/pr114067/Desktop/Paulo/site-pessoal/public/certificados/DIO/React - States Effects.pdf', //path.join(__dirname,'public/certificados/DIO/React - States Effects.pdf'),
-      descricao: 'Aprendi a trabalhar com os 2 principais hooks do React: useState e useEffects para criação de componentes ainda mais inteligentes.'
-    },
-  ]
+  const certificados=[]
+
   res.render('about', {pagina, certificados})
 })
 
