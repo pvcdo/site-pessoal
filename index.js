@@ -40,16 +40,19 @@ app.get('/about',(req,res)=>{
     const certs = response.data.certificados
     certs.forEach((certificado, i) => {
       certificado.id = i
+      var nome = certificado.nome
+      nome = nome.substring(0,nome.length-3)
       certificados.push(certificado)
     })
+    res.render('about', {pagina, certificados})
   })
   .catch(e=>{
     console.log('erro: ' + e.message)
   })
 
-  console.log(certificados)
+  
 
-  res.render('about', {pagina, certificados})
+  
 })
 
 app.get('/blog',(req,res)=>{
