@@ -1,6 +1,146 @@
 {
     "certificados": [
         {
+            "plataforma": "Udemy",
+            "nome": "CypeCAD 2020.pdf",
+            "url": "https://drive.google.com/file/d/1FLYDSkgVrE--Ef40PvUT0_q1AUV5-Xvq/view"
+        },
+        {
+            "plataforma": "Udemy",
+            "nome": "PowerBI 2021.pdf",
+            "url": "https://drive.google.com/file/d/1RXWXOHtRvXnlNpKkF7o-c9ucmZPfi470/view"
+        },
+        {
+            "plataforma": "Udemy",
+            "nome": "WordPress 2021.pdf",
+            "url": "https://drive.google.com/file/d/1FgxnNE3_SZvb2FEBEuKkbhruCCpnw-_O/view"
+        },
+        {
+            "plataforma": "Udemy",
+            "nome": "DevWeb 2020.pdf",
+            "url": "https://drive.google.com/file/d/13eL1e7ff3fVbsv7KhWxr1CRnyC17K25j/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "DotNet - Coleções e Linq.pdf",
+            "url": "https://drive.google.com/file/d/1052gzJ2eu7IEvctaObAV5HO6XfV9lqer/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "DotNet - Design Patterns.pdf",
+            "url": "https://drive.google.com/file/d/1-y9OQu3gX6Ufh-ucSkFOwlxbHCuusLRg/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "DotNet - Microsserviços.pdf",
+            "url": "https://drive.google.com/file/d/1-vIYXus2ZikpV2bJrlrJ5jgwdOS5C98M/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "DotNet - Criando o ambiente de desenvolvimento.pdf",
+            "url": "https://drive.google.com/file/d/1-ud2NuN82emAtMN3wm-wiNXvicqEwaJZ/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "C# - Construtores, Propriedades, Delegates e Eventos em DotNet.pdf",
+            "url": "https://drive.google.com/file/d/1-oRk7T2hUoO5g8hCquoNwQFbtMMmWU3L/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "C# - Programando com OO.pdf",
+            "url": "https://drive.google.com/file/d/1-kgUdS0VAbT5MTI_6sVRLspb_WOnecWQ/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "C# e .NET - Introdução.pdf",
+            "url": "https://drive.google.com/file/d/1-iaKs3ae7g9o3W3Cocebb2GF9VXdLVj9/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "VS - Instalação e Configuração.pdf",
+            "url": "https://drive.google.com/file/d/1-fJm-YJCWSkjGfdUf4oJfSWuB8nDx1Vf/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Básico - Introdução a APIs e métodos HTTP.pdf",
+            "url": "https://drive.google.com/file/d/1-YaVAPs3rVfe7ID5iXpZ73GpvlKQ3Lxw/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "SQL Server - Boas Práticas em bancos relacionais.pdf",
+            "url": "https://drive.google.com/file/d/1-YXv2WisA6X0-SL9G5llloeqVShBNmgQ/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "SQL Server - Modelando um banco de dados na prática.pdf",
+            "url": "https://drive.google.com/file/d/1-SNt_iorOZdi_0_i20crqdAtArRkky11/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "SQL Server - Primeiras Consultas.pdf",
+            "url": "https://drive.google.com/file/d/1-RpX1RZIDFWZMoeK8taIs4hBp4JLgOvz/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "React - Apps Internet.pdf",
+            "url": "https://drive.google.com/file/d/1y0LRgcIB_afPlcLKSdGBeMuSas3NBEK5/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Javascript - Manipular o DOM pelo JS.pdf",
+            "url": "https://drive.google.com/file/d/1NYm8aVqcb9dtKGN3jw8V2hvaUDNKiyUS/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Javascript - Map, Filter, Reduce.pdf",
+            "url": "https://drive.google.com/file/d/1TAPcok6PUraZyRhNBUyadZkac0F5Ab-D/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Javascript - Orientação a objetos.pdf",
+            "url": "https://drive.google.com/file/d/18NXEI428pV-Bp10mFd-6YAywgygdolAb/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Javascritp - Assincronicidade.pdf",
+            "url": "https://drive.google.com/file/d/1xnce_BDyT30mZg5sItsNH17_Z5PF370C/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Javascript - Debugging e Error Handling.pdf",
+            "url": "https://drive.google.com/file/d/1RnIeYNu92KdNVtT42J3udfTmNgWSJ9Cy/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Javascript - Coleções.pdf",
+            "url": "https://drive.google.com/file/d/1mPmMfjWjeB8XZtLAo-zykzHuIsbiGXAF/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "JavaScript - Variáveis e tipos.pdf",
+            "url": "https://drive.google.com/file/d/1h2SUfP7sIyKpWJt911cKCcxze8h1onmo/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "JavaScript - Funções.pdf",
+            "url": "https://drive.google.com/file/d/1dyzosw0gF9RzbJNyXaNqsAhHwIvvSOId/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "JavaScript - Sintaxe Básica.pdf",
+            "url": "https://drive.google.com/file/d/1OCHBXy4XQ478zzNgliRX-K2AAnOt_3IR/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "VS Code.pdf",
+            "url": "https://drive.google.com/file/d/1AjxdleWVcKbjC7ypnCJTqtyybxYRDVYy/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Bootstrap - Páginas Internet.pdf",
+            "url": "https://drive.google.com/file/d/1ksKXrPgAmgt8fm40-PxeFLUb5pyGtEdr/view"
+        },
+        {
             "plataforma": "DIO",
             "nome": "Javascript - Introdução.pdf",
             "url": "https://drive.google.com/file/d/1cUNnth6n8bXVy8y5fBlhkfdVFNhSRmXw/view"
@@ -9,6 +149,86 @@
             "plataforma": "DIO",
             "nome": "Javascript - Jogo Naves.pdf",
             "url": "https://drive.google.com/file/d/1PCj80SG-4sA_IhpVBC-1myrBPXDTCDpR/view"
-        }   
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Javascript - Sintaxe e Operadores.pdf",
+            "url": "https://drive.google.com/file/d/1c4MkOKY6ndrAd3xlrWdmZ67omZGmcOFy/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Git GitHub - Fundamentos Repositorio.pdf",
+            "url": "https://drive.google.com/file/d/1fzNrGEbbJFX_q4TJQIabIPfQ-NHGW-Q5/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "React - States Effects.pdf",
+            "url": "https://drive.google.com/file/d/1Pd74LrQigrUry3Kc0MRlQKDKtM-i_iPG/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "React Hooks.pdf",
+            "url": "https://drive.google.com/file/d/1Wb_yBY2h4AMtG6T0Uq3lZBllSTqmXtzv/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "React - App Restaurante.pdf",
+            "url": "https://drive.google.com/file/d/1PP3clrKM9zVrYwDS7RmOOwvOxHpdUJE4/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "React - Internet.pdf",
+            "url": "https://drive.google.com/file/d/10S6etn1CY_MA-FMbFH1o7U9qIojEi5Mj/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "React Components.pdf",
+            "url": "https://drive.google.com/file/d/1hXlesmGEyqLXjgWu1_tPjW2CC-9bMImL/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "React - Introdução.pdf",
+            "url": "https://drive.google.com/file/d/1y_Es_UksjiplideEaoXG_rZ4P33xHKMd/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Javascript - Internet.pdf",
+            "url": "https://drive.google.com/file/d/1qN8MOFVL7qhpPd-ZtgRUWkOddBOw5Tgb/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Básico - HTML CSS - Introdução.pdf",
+            "url": "https://drive.google.com/file/d/1r2F6mtOKKYhRfxeNaVGtF2NeozHMgO98/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Básico - Interface Netflix.pdf",
+            "url": "https://drive.google.com/file/d/1KcqRslHTb5DBXu_yR3yzgsRlIrMfVElt/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Javascript - Avançado ES6.pdf",
+            "url": "https://drive.google.com/file/d/1zoDcCQp5y9ePqTjzgHcGJ5iXMP5PzgwZ/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Javascript - ES6 Essencial.pdf",
+            "url": "https://drive.google.com/file/d/1-F5BgFB6dcriw7x6FIciq7efc6KFQCGx/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Git GitHub - Introdução.pdf",
+            "url": "https://drive.google.com/file/d/14jqGedRsq8P18PaOeocu4f6lMqdPQSh7/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Básico - Estrutura de dados e Algoritmos.pdf",
+            "url": "https://drive.google.com/file/d/1OVS0QPhNJ1TwlJ8f7pTTs1Q1mdTmNHbj/view"
+        },
+        {
+            "plataforma": "DIO",
+            "nome": "Básico - Lógica de programação.pdf",
+            "url": "https://drive.google.com/file/d/12RqNeAggBx8Pc_fca4gZU_ij_ooMfXC-/view"
+        }
     ]
 }
