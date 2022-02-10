@@ -7,11 +7,11 @@
         {{#each certificados}}
             <div id="cert-{{this.id}}">
                 <p 
-                    onmouseover="abreCert('{{this.id}}','{{this.url}}','{{this.descricao}}')"
+                    onmouseover="abreCert('{{this.id}}','{{this.url}}','{{this.plataforma}}')"
 
                     onmouseleave="fechaCert('{{this.id}}')"
                 >
-                    {{this.titulo}}
+                    {{this.nome}}
                 </p>
             </div>
         {{/each}} 

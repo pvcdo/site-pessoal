@@ -1,6 +1,8 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
+const fs = require('fs')
 const path = require('path')
+const axios = require('axios')
 
 const app = express()
 
@@ -8,7 +10,7 @@ const hbs = exphbs.create({
     partialsDir: ["views/partials/"], // isso indica que usaremos o partials para criar componentes no node e mostra a localização dos documentos que especificam estes componentes
 });
 
-const docs_route = require('./routes/docs/')
+const docs_route = require('./routes/docs');
 
 app.use(express.static('public'))
 
@@ -31,7 +33,21 @@ app.get('/about',(req,res)=>{
     active: 'active'
   }
 
-  const certificados=[]
+  var certificados = []
+
+  axios.get('https://site-pessoal.free.beeceptor.com/site-pessoal-paulo')
+  .then(function(response){
+    const certs = response.data.certificados
+    certs.forEach((certificado, i) => {
+      certificado.id = i
+      certificados.push(certificado)
+    })
+  })
+  .catch(e=>{
+    console.log('erro: ' + e.message)
+  })
+
+  console.log(certificados)
 
   res.render('about', {pagina, certificados})
 })
