@@ -3,16 +3,36 @@
 <h2>Certificates</h2>
 
 <div class="row">
+    <div class="certificado col-md-12">
+        {{#each certificados}}
+            <div id="cert-{{this.id}}">
+                <a href="{{this.url}}" target="_blank">
+                    <button class="btn btn-secondary btn-about">
+                        {{this.nome}}
+                    </button>
+                </a>
+            </div>
+        {{/each}} 
+    </div>
+</div>
+
+<!-- O CÓDIGO ABAIXO ESTÁ SENDO PREPARADO PARA QUE SEJA HABILITADA A VISUALIZAÇÃO DE CADA CERTIFICADO AO PASSAR O MOUSE NO NOME DO CERTIFICADO
+
+<h1>About</h1>
+
+<h2>Certificates</h2>
+
+<div class="row">
     <div class="certificado col-md-6">
         {{#each certificados}}
             <div id="cert-{{this.id}}">
-                <p 
+                <button 
                     onmouseover="abreCert('{{this.id}}','{{this.url}}','{{this.plataforma}}')"
 
                     onmouseleave="fechaCert('{{this.id}}')"
                 >
                     {{this.nome}}
-                </p>
+                </button>
             </div>
         {{/each}} 
     </div>
@@ -21,3 +41,5 @@
         <p id="desc-cert"></p>
     </div>
 </div>
+
+-->

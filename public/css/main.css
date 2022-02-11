@@ -45,3 +45,7 @@ a.docs-indice{
 button.btn-docs{
     width: 200px;
 }
+
+button.btn-about{
+    margin-bottom: 20px;
+}

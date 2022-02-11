@@ -7,19 +7,19 @@ const axios = require('axios')
 const app = express()
 
 const hbs = exphbs.create({
-    partialsDir: ["views/partials/"], // isso indica que usaremos o partials para criar componentes no node e mostra a localização dos documentos que especificam estes componentes
+  partialsDir: ["views/partials/"], // isso indica que usaremos o partials para criar componentes no node e mostra a localização dos documentos que especificam estes componentes
 });
 
 const docs_route = require('./routes/docs');
 
 app.use(express.static('public'))
 
-app.engine('handlebars',exphbs.engine())
-app.set('view engine','handlebars')
+app.engine('handlebars', exphbs.engine())
+app.set('view engine', 'handlebars')
 
 app.use(express.json())
 
-app.use('/docs',docs_route)
+app.use('/docs', docs_route)
 
 app.use(
   express.urlencoded({
@@ -27,7 +27,7 @@ app.use(
   }),
 )
 
-app.get('/about',(req,res)=>{
+app.get('/about', (req, res) => {
   const pagina = {
     about: true,
     active: 'active'
@@ -36,54 +36,54 @@ app.get('/about',(req,res)=>{
   var certificados = []
 
   axios.get('https://site-pessoal.free.beeceptor.com/site-pessoal-paulo')
-  .then(function(response){
-    const certs = response.data.certificados
-    certs.forEach((certificado, i) => {
-      certificado.id = i
-      var nome = certificado.nome
-      nome = nome.substring(0,nome.length-3)
-      certificados.push(certificado)
+    .then(function (response) {
+      let certs = response.data.certificados
+      certs.forEach((certificado, i) => {
+        //colocando id no certificado
+        certificado.id = i
+
+        // alterando o nome para tirar a extensão
+        var nome = certificado.nome
+        nome = nome.substring(0, nome.length - 4)
+        certificado.nome = nome
+        certificados.push(certificado)
+      })
+      res.render('about', { pagina, certificados })
     })
-    res.render('about', {pagina, certificados})
-  })
-  .catch(e=>{
-    console.log('erro: ' + e.message)
-  })
-
-  
-
-  
+    .catch(e => {
+      console.log('erro: ' + e.message)
+    })
 })
 
-app.get('/blog',(req,res)=>{
+app.get('/blog', (req, res) => {
   const pagina = {
     blog: true,
     active: 'active'
   }
-  res.render('blog',{pagina})
+  res.render('blog', { pagina })
 })
 
-app.get('/contact',(req,res)=>{
+app.get('/contact', (req, res) => {
   const pagina = {
     contact: true,
     active: 'active'
   }
-  res.render('contact',{pagina})
+  res.render('contact', { pagina })
 })
 
-app.get('/projects',(req,res)=>{
+app.get('/projects', (req, res) => {
   const pagina = {
     projects: true,
     active: 'active'
   }
-  res.render('projects',{pagina})
+  res.render('projects', { pagina })
 })
 
-app.get('/',(req,res)=>{
-    res.render('index')
+app.get('/', (req, res) => {
+  res.render('index')
 })
 
-app.listen(3000,() => {
-    console.log('App rodando perfeitamente na porta 3000!')
+app.listen(3000, () => {
+  console.log('App rodando perfeitamente na porta 3000!')
 })
 
