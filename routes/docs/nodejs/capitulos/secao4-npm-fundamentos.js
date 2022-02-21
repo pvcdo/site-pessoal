@@ -1,0 +1,81 @@
+const capitulo = () => {
+    return(
+        <>
+            <h2><span style="color:green"><i class="fab fa-node-js"></i> </span>Fundamentos do npm</h2>
+
+            <h3>O que é o npm?</h3>
+
+            <p>É o principal gerenciador de pacotes do node.js. Assim como ele tem o yarn também. Com ele nós
+                instalamos módulos externos para o nosso projeto. Nós podemos criar um projeto node sem usar o
+                npm, porém nós gastaríamos mais tempo para criar módulos sem segurança e eficiência.</p>
+
+            <p>Toda criação de um projeto com npm gera um arquivo package.json, que informa quais foram as
+                dependências instaladas entre outras configurações.</p>
+
+            <h3>Criando um projeto</h3>
+
+            <p>Para iniciar o projeto damos o comando &lt; npm init &gt; </p>
+
+            <p>Outra forma de iniciar um projeto node é dar um &lt; npm init -y &gt;, com esse comando são dadas
+                as respostas padrão que o npm init exige.</p>
+
+            <p>Quando nós instalamos o primeiro pacote é criada a pasta node_modules, que é onde os pacotes
+                (dependências) terceiros ficarão armazenados </p>
+
+            <p>Sempre quando formos rodar projetos baixados de outras pessoas temos que dar o comando npm
+                install (npm i) que vai ler o package.json daquele projeto e instalar na nossa máquina os
+                pacotes necessários para o projeto funcionar.</p>
+
+            <h3>Instalando pacote como dev</h3>
+
+            <p>Nós podemos instalar os pacotes para funcionarem apenas no momento que estamos desenvolvendo o
+                nosso projeto (esses pacotes não sobem quando nós formos publicar o projeto). Para isso nos
+                damos o comando <b> npm install --save-dev &lt; pacote &gt;</b>. Dessa forma, no package.json o
+                pacote salvo como dev estará agrupado no atributo devDependencies.</p>
+
+            <h3>Criando scripts</h3>
+
+            <p>Scripts são séries de comandos configurados por nós para serem executados.</p>
+
+            <p>Para criar um script nós vamos no package.json e dentro de "scripts" nós escrevemos o nome
+                comando como atributo e o valor é o que será executado no terminal. Depois nós abrimos o
+                terminal no diretório do projeto e damos o comando <b>npm run "nome-do-script"</b></p>
+
+            <p>Por exemplo: ao dar o comando <b>npm run start</b> no diretório 5-scripts é executado o script
+                start que está especificado no package.json do diretório (que no caso é executar <b>node
+                    index.js</b>)</p>
+
+            <p>Colocando o nome do script como start, nós não precisamos escrever run bastando apenas escrever
+                <b>npm start</b>. Isso também acontece com alguns outros poucos scripts especiais (como test).
+            </p>
+
+            <h3>Pacotes globais</h3>
+
+            <p>Nós podemos instalar um pacote de forma que ele fique na raiz do node do nosso pc e seja
+                acessível a qualquer projeto dentro do nosso pc.</p>
+
+            <p>Ele não gera, portanto uma inclusão no node_modules local, nem aparece no package.json.</p>
+
+            <p>Alguns pacotes precisam ter suas pastas instaladas localmente e para acessar este tipo de pacote
+                (que precisa de suas pastas por perto) mas que foi instalado globalmente, nós podemos usar o
+                comando <b>npm link "nome_do_pacote_global"</b> </p>
+
+            <p>Para isso nós damos o comando <b>npm install -g "nome_do_pacote"</b></p>
+
+            <h3>NPX</h3>
+
+            <b style="color:green">O npx é um executador de pacotes npm, ele instala e roda um pacote.</b>
+
+            <p>Nós usamos esse comando para trabalhar com pacotes de scripts executáveis (como é o caso do
+                create-react-app).</p>
+
+            <h3>Remover pacotes</h3>
+
+            <b>npm uninstall "nome_do_pacote"</b>
+
+            <p>Ele também é removido do package.json.</p>
+
+            <hr style="border-top: 2px green dashed; color:white"/>
+        </>
+    )
+}

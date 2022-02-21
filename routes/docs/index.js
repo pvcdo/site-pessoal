@@ -10,7 +10,12 @@ router.get('/nodejs', (req, res) => {
         docs_nodejs: true,
         title: 'Node.js Documentation'
     }
-    res.render(`${__dirname}/nodejs.handlebars`,{pagina, layout: 'layout-docs'})
+
+    //tentativa de renderizar usando react
+    //res.render(`${__dirname}/nodejs/index.js`,{pagina, layout: 'layout-docs'}) 
+    
+    // renderização padrão com handlebars
+    res.render(`${__dirname}/nodejs/nodejs.handlebars`,{pagina, layout: 'layout-docs'})
 })
 
 router.get('/',(req,res) => {

@@ -1,0 +1,102 @@
+const capitulo = () => {
+    return(
+        <>
+            <h2><span style="color:green"><i class="fab fa-node-js"></i> </span>Seção 3 - Core Modules</h2>
+
+<h3 id="core_modules_introducao">Introdução</h3>
+
+<p>Alguns core modules fundamentais são</p>
+
+<ul>
+    <li>
+        <b>http</b> - Usado para criar servidores http, ou seja, receber e retornar requisições e
+        respostas
+    </li>
+    <li>
+        <b>path</b> - extrair caminho até algum arquivo, extensão entre outros
+    </li>
+    <li>
+        <b>fs</b> - leitura e escrita de arquivos e diretórios
+    </li>
+    <li>
+        <b>url</b>
+    </li>
+</ul>
+
+<h3>Método http</h3>
+
+<p>Podemos receber uma requisição e responder um html, por exemplo. Ou então podemos criar um
+    servidor e determinar as postas.</p>
+
+<p><a href="">Github - 3_CORE_MODULES/1-http e 3_CORE_MODULES/2-retornando-html</a></p>
+
+<h3>Método url</h3>
+
+<p><a href="">GitHub - 3_CORE_MODULES\3-url e 4-http+url </a></p>
+
+<h3>Método fs</h3>
+
+<p><a href="#">GitHub - 6-escrevendo-arquivos</a></p>
+
+<h4>Escrevendo arquivo</h4>
+
+<p>fs.writeFile('arquivo.extensão',"algo a ser escrito no arquivo', função callback(erro,&lt
+    conteúdo do arquivo &gt){})</p>
+
+<p>Esse método substitui tudo que por ventura estivesse escrito anteriormente no arquivo</p>
+
+<h4>Atualizando arquivo</h4>
+
+<p>fs.appendFile('arquivo.extensão',"algo a ser escrito no arquivo', função callback(erro,&lt
+    conteúdo do arquivo &gt){})</p>
+
+<p>Essa função não substitui o que estava escrito anteriormente no arquivo, mas adiciona mais texto
+    ou informações</p>
+
+<h4>Removendo arquivo</h4>
+
+<p>fs.unlink('arquivo.extensão',funcao de erro(erro)){}</p>
+
+<p>É importante colocar uma lógica verificando se existe erro, sob risco do comportamento do
+    programa ser equivocado. Será emitido um erro caso não exista o arquivo que está se tentando
+    excluir.</p>
+
+<h4>Renomeando arquivo</h4>
+
+<p>fs.rename('nome antigo', 'nome novo', função callback(erro){})</p>
+
+<h4>Rotas com Node.js puro</h4>
+
+<p><a href="#">Github - 10-roteamento</a></p>
+
+<h4>Stat - detalhes de um arquivo</h4>
+
+<p><a href="#">Github - 11-detalhes-arquivos</a></p>
+
+<h3>Módulo path</h3>
+
+<b style="color: red;">Consultei a <a target="_blank"
+        href="https://nodejs.org/docs/latest-v14.x/api/path.html">documentação do node (versão 14
+        lts)</a> e não achei alguns dos comandos aqui estudados...</b>
+
+
+<h4>dirname, basename, extname</h4>
+
+<p><a href="#">Github - 12-path</a></p>
+
+<h4>path absoluto (resolve) e formar path (join)</h4>
+
+<p><a href="#">Github - 13-path-absoluto-join</a></p>
+
+<h4>existsSync e mkdirSync</h4>
+
+<p>fs.existsSync('pasta com caminho relativo')  true se a pasta existe</p>
+
+<p>fs.mkdirSync('nome') &rarr cria a pasta com o nome especificado no diretório local</p>
+
+<h3>Módulo os</h3>
+
+<p>Informações do sistema operacional</p>
+        </>
+    )
+}

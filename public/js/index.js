@@ -1,7 +1,3 @@
-if(location.pathname === '/'){
-    alert('Necessário restringir a API Key no Google Cloud Platform')
-}
-
 function abreQr(img){
 
     const div_img = document.getElementById(`img-qrcode`)
