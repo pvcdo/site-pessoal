@@ -1,7 +1,0 @@
-const capitulo = () => {
-    return(
-        <>
-
-        </>
-    )
-}

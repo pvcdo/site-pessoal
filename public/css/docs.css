@@ -23,7 +23,7 @@ aside{
     padding: 10px; 
 }
 
-aside div.back{
+aside div.back, aside div.secoes{
     display: flex;
     flex-direction: column;
 }
