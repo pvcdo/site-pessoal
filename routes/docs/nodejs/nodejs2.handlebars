@@ -1,9 +1,5 @@
 <!-- TRANSFORMAR ESSA PÁGINA EM INDEX.JS -->
 
-Handlebars.registerHelper( 'concat', function(path) {
-    return "/etc/path" + path;
-});
-
 <div id="topo"></div>
 
 <div class="botoes-mov">
@@ -30,8 +26,10 @@ Handlebars.registerHelper( 'concat', function(path) {
         </div>
         <hr>
         <div class="secoes">
-            {{#each secoes}}
-                <a href="">{{this}}</a>
+            {{#each secoes as |secao|}}
+                {{#if secao.visu}}
+                    <a href="#{{this.id}}">{{this.id}}</a>
+                {{/if}}
             {{/each}}
         </div>
     </aside>
@@ -48,7 +46,7 @@ Handlebars.registerHelper( 'concat', function(path) {
                 href="https://github.com/pvcdo/estudos-nodejs">Github</a>.</p>
         
         {{#each secoes}}
-            {{> (this) }}
+            {{>(partialDocs this.id)}}
         {{/each}}
         
 
