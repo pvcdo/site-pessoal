@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-const fs = require('fs')
 
 const path = require('path')
 
@@ -15,15 +14,15 @@ router.get('/nodejs', (req, res) => {
     }
 
     const arr_secoes = [
-        'secao1-introducao',
-        'secao2-fundamentos',
-        'secao3-core-modules',
-        'secao4-npm-fundamentos',
-        'secao6-express',
-        'secao7-template-engines',
-        'secao8-mysql',
-        'secao9-sequelize',
-        'secaofinal-aprofundarEm',
+        ['secao1-introducao','Introdução'],
+        ['secao2-fundamentos', 'Fundamentos NodeJS'],
+        ['secao3-core-modules', 'Core Modules'],
+        ['secao4-npm-fundamentos', 'Fundamentos NPM'],
+        //['secao6-express', 'Express'],
+        ['secao7-template-engines', 'Template Engines'],
+        ['secao8-mysql', 'MySQL'],
+        ['secao9-sequelize', 'Sequelize'],
+        ['secaofinal-aprofundarEm',''],
     ]
 
     const secoes = []
@@ -31,7 +30,8 @@ router.get('/nodejs', (req, res) => {
     arr_secoes.forEach(secao => {
         //const partial= require(`${viewsPath}/partials/docs/nodejs/${secao}.handlebars`)
         const obj_secao = {
-            id: secao,
+            id: secao[0],
+            menu: secao[1]
         }
         if(secao !== 'secaofinal-aprofundarEm'){
             obj_secao.visu = true;

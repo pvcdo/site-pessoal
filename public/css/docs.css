@@ -29,6 +29,7 @@ aside div.back, aside div.secoes{
 }
 
 aside a{
+    margin-bottom: 10px;
     font-weight: 700;
     color: white;
     text-decoration: none;
@@ -43,12 +44,16 @@ aside a.docs{
 }
 
 aside a:hover{
-    color: white;
+    color: rgb(192, 192, 192);
 }
 
 
 main{
     margin: 30px 60px 30px var(--margem-esquerda-main);
+}
+
+span{
+    margin-right: 10px;
 }
 
 #notas-de-aula, div{
