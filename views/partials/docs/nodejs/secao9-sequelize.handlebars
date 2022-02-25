@@ -18,7 +18,31 @@
 
 <h3>Conexão com o Sequelize</h3>
 
-<p>Temos que instalar a partir do npm i sequelize. Para conectar com o banco precisamos passar os dados de: banco, usuário e senha.</p>
+<a href="">github - SEQUELIZE/CONEXÃO</a>
 
+<h3>Criando o Model</h3>
 
- 
+<p>Como não temos queries nós não selecionamos tabelas, e para tanto, nós temos que criar um model, que irá representar uma tabela.</p>
+
+<p>Vamos ter um model para cada tabela do nosso banco. Para representar a tabela "users" do banco nós criamos no sequelize o model "User" (isso serve para vermos como é o padrão de escrita no sequelize).</p>
+
+<a href="">github - SEQUELIZE/MODELS</a>
+
+<h3>Inserindo dados</h3>
+
+<a href="">github - SEQUELIZE/INSERCAO-DADOS</a>
+
+<h3>Lendo dados</h3>
+
+<a href="">github - SEQUELIZE/LEITURA-DADOS</a>
+
+<h3>Utilizando WHERE</h3>
+
+<P>Como já é sabido no SQL, o where filtra os dados do banco para atualizar ou deletar apenas aqueles que satisfaçam a condição do where. Utilizamos o método findOne do sequelize para isso.</P>
+
+<p>O findOne retorna o primeiro registro que satisfaça à condição do where.</p>
+
+<a href="">github - SEQUELIZE/WHERE</a>
+
+<h3>Removendo itens</h3>
+
