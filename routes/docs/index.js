@@ -18,10 +18,11 @@ router.get('/nodejs', (req, res) => {
         ['secao2-fundamentos', 'Fundamentos NodeJS'],
         ['secao3-core-modules', 'Core Modules'],
         ['secao4-npm-fundamentos', 'Fundamentos NPM'],
-        //['secao6-express', 'Express'],
+        ['secao6-express', 'Express'],
         ['secao7-template-engines', 'Template Engines'],
         ['secao8-mysql', 'MySQL'],
         ['secao9-sequelize', 'Sequelize'],
+        ['secao10-mvc', 'MVC'],
         ['secaofinal-aprofundarEm',''],
     ]
 
