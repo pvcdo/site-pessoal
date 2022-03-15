@@ -1,0 +1,45 @@
+<h2 id="secao10-mvc">Seção 10 - MVC</h2>
+
+<h3>Introdução</h3>
+
+<p>É um padrão de arquitetural (forma de organizar/estruturar os arquivos e pastas) muito utilizado por muitos frameworks (como o laravel do php). No express temos que criar por nós mesmos o nosso MVC.</p>
+
+<p>MVC é um acrônimo para Model View Controller. Serve para deixar as aplicações mais organizadas e para facilitar a sua escalabilidade e manutenção. Cada uma dessas camadas tem sua responsabilidade e conversam entre si.</p>
+
+<p>O model recebe o dado, o controller trata o dado e o view apresenta o dado tratado.</p>
+
+<h3>Model</h3>
+
+<p>É a camada onde vamos <strong>interagir com o banco de dados</strong>, ou seja, é responsável por resgatar, atualizar, remover e criar dados.</p>
+
+<h3>View</h3>
+
+<p>Apresenta dados e proporciona a interação com o usuário. O certo é ter o mínimo possível de códigos na view.</p>
+
+<h3>Controller</h3>
+
+<p>Interação entre model e view, onde estão as lógicas de interação com o banco que são passadas para os models e as lógicas de apresentação de dados que são passados para as views.</p>
+
+<h3>Estrutura MVC</h3>
+
+<p>Haverá as pastas controllers, models, views e routes e também o arquivo index.js</p>
+
+<p>Geralmente o número de controllers é igual ao número de models, pois cada model vai ter um controller que vai trabalhar com ele. Pode ser que tenham mais controllers que models, já que algumas operações não estão vinculadas a qualquer model</p>
+
+<p>Para cada tabela no banco de dados teremos um model. Cada um desses models tem os métodos que serão usados na tabela específica. Como estamos utilizando o sequelize nós já podemos utilizar os seus métodos próprios.</p>
+
+<a href="">10_MVC/1-estrutura</a>
+
+<h3>Criando o Model</h3>
+
+<p>Começamos criando o model, porque é aqui que se concentram os dados do negócio.</p>
+
+<a href="">10_MVC/2-criar-model</a>
+
+<h3>Criando o contoller</h3>
+
+<a href="">10_MVC/2-criar-controller</a>
+
+<h3>Criando rotas</h3>
+
+<a href="">10_MVC/2-criar-rotas</a>
