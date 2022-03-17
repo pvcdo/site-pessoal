@@ -1,0 +1,79 @@
+<h2>Introdução</h2>
+
+<h3>O que é o PHP?</h3>
+
+<p>É um projeto open source. Pode ser escrito em linha de comando para automatizar processos locais via linha de comando, para criar aplicações desktop e aplicações server-side (back-end), para criação de sistemas web dinâmicos.</p>
+
+<p>É uma linguagem interpretada, onde os seus comandos são enviados para o sistema, transformados em liguagem de compilação e depois enviadas para transformação em linguagem de máquina.</p>
+
+<p>Aceita muito bem o paradigma de orientação a objetos. Suporte a diversos bancos de dados e de diversos protocolos de comunicação (http, eldap, imap, pop3, smtp, ftp, dentre outros)</p>
+
+<p>Os arquivos de extensão php passam pelo interpretador da linguagem antes de retornar o documento html requisitado.</p>
+
+<h3>Tags</h3>
+
+<ul>
+    <li>tag padrão --- &lt;?php código aqui ?&gt;</li>
+    <li>tag de impressão --- &lt;?= código aqui ?&gt;</li>
+    <li>tag curta --- &lt;? código aqui ?&gt; (descontinuada na versão 8)</li>
+    <li>tag asp --- &lt;% código aqui %&gt; (descontinuada na versão 7)</li>
+</ul>
+
+<p>Podemos utilizar as tags php em qualquer local do código</p>
+
+<h3>echo e print</h3>
+
+<p>As instruções em php devem ser fechadas com ";"</p>
+
+<p>Podemos passar elementos html dentro de uma cadeia de caracteres passada por echo ou print.</p>
+
+<p>O print no php é uma função, mas pode ser usada a sintaxe igual a de echo (sem parênteses) para impressão de cadeia de caracteres. Caso o comando print dê sucesso, é impresso no html seu conteúdo especificado e retorna o valor 1.</p>
+
+<h3>Comentários</h3>
+
+<ul>
+    <li>// --- comentário para 1 linha </li>
+    <li>/* */ --- comentário de bloco </li>
+</ul>
+
+<h3>Variáveis</h3>
+
+<p>Inicia-se com o caracter $ e mantém os mesmos padrões de nomenclatura das outras linguagens. PHP é fracamente tipada. Podemos atribuir ou não um valor a uma variável.</p>
+
+<p>Exemplo de aplicação do php em uma página. <a href="https://www.udemy.com/course/web-completo/learn/lecture/9860526#overview">Vídeo do exemplo</a></p>
+
+<pre>
+    //exemplo.php
+    &lt;html&gt;
+        &lt;head&gt;
+
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;?php
+                $nome = "Paulo"
+            ?&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+
+    &lt;h1&gt;Ficha cadastral&lt;/h1&gt;
+    &lt;br/&gt;
+    &lt;p&gt;Nome: &lt;?= $nome ?&gt;&lt;/p&gt;
+</pre>
+
+<p>No exemplo acima, o nome passado a partir da tag padrão é recuperado a partir da tag de impressão e exibida na estrutura html retornada.</p>
+
+<p>O retorno de um true é 1, para false é null.</p>
+
+<p>É possível alterar o valor e o tipo de uma variável em qualquer momento dentro da lógica de um documento php.</p>
+
+<h4>Constantes</h4>
+
+<p>Para criar constantes nós utilizamos o comando define("nome da constante", valor). O nome da constante não terá $. </p>
+
+<p>Para recuperar o valor da constante dentro da lógica nós apenas escrevemos o nome da constante.</p>
+
+<h3>Concatenação</h3>
+
+<p>Para concatenar nós usamos o operador "." (basicamente o ponto final)</p>
+
+<p>Ao utilizar aspas duplas, não precisamos ir quebrando a string e utilizar o operador ".", podemos passar a variárvel dentro do conjunto de caracteres e ela será interpretada pelo PHP.</p>

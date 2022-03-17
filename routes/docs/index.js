@@ -7,6 +7,79 @@ const viewsPath = path.join(__dirname,'../../views')
 
 const app = express();
 
+function viewSecoes(arr_secoes){
+    const secoes = []
+
+    arr_secoes.forEach(secao => {
+        //const partial= require(`${viewsPath}/partials/docs/nodejs/${secao}.handlebars`)
+        const obj_secao = {
+            id: secao[0],
+            menu: secao[1]
+        }
+        if(secao !== 'secaofinal-aprofundarEm'){
+            obj_secao.visu = true;
+        }else{
+            obj_secao.visu = false;
+        }
+        secoes.push(obj_secao)
+    })
+
+    return secoes
+}
+
+router.get('/php',(req,res) => {
+    const pagina={
+        title: 'PHP Documentation',
+    }
+
+    const arr_secoes = [
+        ['secao1-introducao','Introdução']
+    ]
+
+    const secoes = viewSecoes(arr_secoes)
+
+    res.render(
+        `${__dirname}/php/php.handlebars`,
+        {
+            pagina, 
+            secoes, 
+            layout: 'layout-docs', 
+            helpers:{
+                partialDocs: function(secao){
+                    return ('docs/php/' + secao)
+                } 
+            }
+        }
+    )
+})
+
+router.get('/laravel',(req,res) => {
+    const pagina={
+        docs_laravel: true,
+        title: 'Laravel Documentation',
+    }
+
+    const arr_secoes = [
+        ['secao2-ambiente','Introdução'],
+    ]
+
+    const secoes = viewSecoes(arr_secoes)
+
+    res.render(
+        `${__dirname}/laravel/laravel.handlebars`,
+        {
+            pagina, 
+            secoes, 
+            layout: 'layout-docs', 
+            helpers:{
+                partialDocs: function(secao){
+                    return ('docs/laravel/' + secao)
+                } 
+            }
+        }
+    )
+})
+
 router.get('/nodejs', (req, res) => {
     const pagina={
         docs_nodejs: true,
@@ -26,21 +99,7 @@ router.get('/nodejs', (req, res) => {
         ['secaofinal-aprofundarEm',''],
     ]
 
-    const secoes = []
-
-    arr_secoes.forEach(secao => {
-        //const partial= require(`${viewsPath}/partials/docs/nodejs/${secao}.handlebars`)
-        const obj_secao = {
-            id: secao[0],
-            menu: secao[1]
-        }
-        if(secao !== 'secaofinal-aprofundarEm'){
-            obj_secao.visu = true;
-        }else{
-            obj_secao.visu = false;
-        }
-        secoes.push(obj_secao)
-    })
+    const secoes = viewSecoes(arr_secoes)
 
     //tentativa de renderizar usando react
     //res.render(`${__dirname}/render/src`) 

@@ -1,0 +1,56 @@
+<!-- TRANSFORMAR ESSA PÁGINA EM INDEX.JS -->
+
+<div id="topo"></div>
+
+<div class="botoes-mov">
+
+    <a href="#topo">
+        <button class="botao-mov">
+            <i class="fas fa-angle-double-up fa-2x"></i>
+        </button>
+    </a>
+
+    <a href="#fim">
+        <button class="botao-mov">
+            <i class="fas fa-angle-double-down fa-2x"></i>
+        </button>
+    </a>
+
+</div>
+
+<div id='container'>
+    <aside>
+        <div class="back">
+            <a class="home" href="/">Home</a>
+            <a class="docs" href="/docs">Docs</a>
+        </div>
+        <hr>
+        <div class="secoes">
+            {{#each secoes as |secao|}}
+                {{#if secao.visu}}
+                    <a href="#{{this.id}}">{{this.menu}}</a>
+                {{/if}}
+            {{/each}}
+        </div>
+    </aside>
+
+    <main>
+
+        <h1 id="notas-de-aula">Notas de aula</h1>
+
+        <p>Aqui tomarei notas das aulas do curso <a href="https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/">Desenvolvimento Web Avançado 2022 com PHP, Laravel e Vue.JS
+</a> do professor <a href="https://www.linkedin.com/in/jorgesantanabr">Jorge Sant' Ana</a>.</p>
+
+        <p>Será criado um repositório no github para alocar exemplos e aplicações de estudo complementares.</p>
+        
+        {{#each secoes}}
+            {{>(partialDocs this.id)}}
+        {{/each}}
+        
+
+    <div id="fim"></div>
+
+    <!-- INSERIR APROFUNDAR EM AQUI -->
+
+    </main>
+</div>
