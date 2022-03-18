@@ -52,12 +52,12 @@
             &lt;?php
                 $nome = "Paulo"
             ?&gt;
+
+            &lt;h1&gt;Ficha cadastral&lt;/h1&gt;
+            &lt;br/&gt;
+            &lt;p&gt;Nome: &lt;?= $nome ?&gt;&lt;/p&gt;
         &lt;/body&gt;
     &lt;/html&gt;
-
-    &lt;h1&gt;Ficha cadastral&lt;/h1&gt;teste
-    &lt;br/&gt;
-    &lt;p&gt;Nome: &lt;?= $nome ?&gt;&lt;/p&gt;
 </pre>
 
 <p>No exemplo acima, o nome passado a partir da tag padrão é recuperado a partir da tag de impressão e exibida na estrutura html retornada.</p>
@@ -77,3 +77,64 @@
 <p>Para concatenar nós usamos o operador "." (basicamente o ponto final)</p>
 
 <p>Ao utilizar aspas duplas, não precisamos ir quebrando a string e utilizar o operador ".", podemos passar a variárvel dentro do conjunto de caracteres e ela será interpretada pelo PHP.</p>
+
+<h3>Operadores condicionais</h3>
+
+<h4>If/else</h4>
+
+<p>Igual ao javascript</p>
+
+<h4>Operador ternário</h4>
+
+<p>Serve para quando vamos realizar apenas uma instrução quando precisamos de usar um condicional.</p>
+
+<p>condição ? se_condicao_true : se_condicao_false</p>
+
+<h4>Switch</h4>
+
+<p>Faz uma comparação de idênticos. A sintaxe é igual ao javascript</p>
+
+<h3>Operadores de Comparação</h3>
+
+<p>Iguais ao javascript</p>
+
+<h3>Operadores lógicos</h3>
+
+<ul>
+    <li>AND ou &amp;&amp;</li>
+    <li>OR ou ||</li>
+    <li>XOR => apenas um verdadeiro</li>
+    <li>! => negação</li>
+</ul>
+
+<h3>Casting de tipos</h3>
+
+<p>A função gettype($variavel), nativa do php, retorna qual é o tipo da variável passada como parâmetro.</p>
+
+<img src="public/img/docs/php/casting.PNG" alt="Imagem de casting">
+
+<p>Para alterar de um tipo para o outro podemos declarar uma segunda variável que recebe como valor a variável que queremos parsear precedida pelo tipo que queremos entre parênteses. GITHUB (parse.php)</p>
+
+<h3>Funções</h3>
+
+GITHUB (funcoes.php)
+
+<h4>Nativas</h4>
+
+<p>No manual do php tem as listas das funções nativas para manipulação de strings, matemática, datas, arrays.</p>
+
+<p>As funções var_dump e print_r encapsuladas por echo "&lt;pre&gt;" são boas para apresentar arrays de forma mais estruturada.</p>
+
+<h3>Arrays</h3>
+
+<p>Nós podemos criar arrays numéricos sequenciais ou associativos. Aquele é o padrão, onde o primeiro elemento do array tem o índice 0; já estes tem os índices determinados pelo usuário.</p>
+
+GITHUB (arrays.php)
+
+<h3>Estruturas de repetição</h3>
+
+<p>while, do while e for </p>
+
+<h4>foreach</h4>
+
+GITHUB (arrays.php)
