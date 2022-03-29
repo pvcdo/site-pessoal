@@ -1,0 +1,15 @@
+<h2>Conexão com o mysql</h2>
+
+<p>Por não estar usando o xampp eu estou fazendo algumas configurações sozinho. Uma delas é a configuração da conexão com o mysql. Usarei a API PDO para fazer a conexão com o meu banco. Temos que primeiro achar qual é o php.ini correto e nele descomentar 'extension_dir="ext"' e "pdo_mysql".</p>
+
+<h3>Conectando com o banco</h3>
+
+<p>Para conectar temos que criar uma nova instância do objeto PDO, passando em seu construtor o primeiro atributo que é o conjunto de qual sgbd estamos utilizando, qual o host e qual o nome do banco de dados naquele host; como segundo parâmetro passamos o nome do usuário do banco e por último a senha.</p>
+
+<h3>Método exec</h3>
+
+<p>Esse comando executa a string que contém o comando SQL a ser executada no banco e que é passada como parâmetro do método. Esse método, além de realizar o que foi informado na string, retorna o valor de linhas afetadas.</p>
+
+<h3>Método query</h3>
+
+<p>Esse método retorna um PDOStatement que é um metadado do banco de dados de acordo com o especificado na query sql passada como parâmetro.</p>
