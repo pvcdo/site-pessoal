@@ -1,0 +1,19 @@
+<h2 id="secao11-mongodb">Seção 11 - MVC</h2>
+
+<h3>Introdução ao NoSQL</h3>
+
+<p>NoSQL são focados em documentos, não em tabelas com linhas e colunas. Ao invés de tabelas, usamos collections. Não é necessário ter uma estrutura definida para criar uma collection. São documentos como JSON. A modelagem de dados com relacionamentos é opcional. Não se usa queries, mas sim métodos de classes.</p>
+
+<h3>Introdução ao MongoDB</h3>
+
+<p>MongoDB é um banco não relacional (NoSQL), muito utilizado para criação de API's. Os dados ficam salvos em estruturas parecidas com JSON, chamadas BSON. A stack node + mongo + angular é muito utilizada.</p>
+
+<p>É recomendável usar o <a href="https://cmder.net/">cmder</a> como programa de linha de comandos, a fim de podermos utilizar a sintaxe do cmd do linux. A partir de agora, todas as menções à cmd estarão fazendo referência ao programa cmder.</p>
+
+<h3>Instalação no Windows</h3>
+
+<p>É necessário no instalar o MongoDB e o MongoDB tools, que estão na documentação oficial. Clicamos em try free, depois em on-premises (instalação local). Escolhemos a versão mais recente, a plataforma windows e a extenção msi, baixamos esse documento. Vamos depois em MongoDB database tools e fazemos também o download.</p>
+
+<p>Ao baixar os dois arquivos vamos dando os next da instalação no windows. Durante a instalação vamos escolher a intalação completa padrão. Eles dão uma tela para configurarmos onde queremos colocar a pasta onde ficarão dos binários do mongodb, é importante sabermos onde esta pasta está localizada. Deixamos baixar também o MongoDB Compass, que é um GUI do mongo. Depois instalamos o tools de forma padrão, anotando o path onde estão os binários. Ao final das instalações, podemos abrir o cmd e dar o comando "mongo" e "mongoimport".</p>
+
+<p>Caso dê erro na execução do comando mongo no cmd, temos que colocar o endereço dos binários de mongodb e mongodb tools nas variáveis de ambiente.</p>
