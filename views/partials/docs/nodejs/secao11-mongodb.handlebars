@@ -10,6 +10,14 @@
 
 <p>É recomendável usar o <a href="https://cmder.net/">cmder</a> como programa de linha de comandos, a fim de podermos utilizar a sintaxe do cmd do linux. A partir de agora, todas as menções à cmd estarão fazendo referência ao programa cmder.</p>
 
+<h4>Entidades</h4>
+
+<ul>
+    <li>Database: onde ficam as collections (como as tabelas nos bancos relacionais) e os documents (dados)</li>
+    <li>collections: diferentemente das tabelas, elas não precisam ser predefinidas e podem ser criadas livremente e a qualquer momento</li>
+    <li>documents: é a nomenclatura dos dados no MongoDB</li>
+</ul>
+
 <h3>Instalação no Windows</h3>
 
 <p>É necessário no instalar o MongoDB e o MongoDB tools, que estão na documentação oficial. Vamos em <a href="https://www.mongodb.com/try/download">try</a>, na aba on-premises (instalação local) baixamos o community-server. Escolhemos a versão mais recente, a plataforma windows e a extenção msi, baixamos esse documento. Na aba tools baixamos MongoDB database tools.</p>
@@ -17,3 +25,11 @@
 <p>Ao baixar os dois arquivos vamos dando os next da instalação no windows. Durante a instalação vamos escolher a intalação completa padrão. Eles dão uma tela para configurarmos onde queremos colocar a pasta onde ficarão dos binários do mongodb, é importante sabermos onde esta pasta está localizada. Deixamos baixar também o MongoDB Compass, que é um GUI do mongo. Depois instalamos o tools de forma padrão, anotando o path onde estão os binários. Ao final das instalações, podemos abrir o cmd e dar o comando "mongo" e "mongoimport".</p>
 
 <p>Caso dê erro na execução do comando mongo no cmd, temos que colocar o endereço dos binários de mongodb e mongodb tools nas variáveis de ambiente.</p>
+
+<h3>Primeiros passos em MongoDB</h3>
+
+<a href="">11_MONGODB/1_starting</a>
+
+<h3>Conexão do MongoDB no NodeJS</h3>
+
+<a href="">11_MONGODB/2_conn-mongo-node</a>
