@@ -1,0 +1,30 @@
+<h2 id="secao13-apis">Seção 13 - API's</h2>
+
+<h3>O que API</h3>
+
+<p>API é um acrônimo para Application Programming Interface (Interface de programação de aplicações). É uma forma simples de comunicação de aplicações. Não necessita de telas, geralmente as respostas são em JSON. Nós enviamos um texto de requisição para a API, a API manipula os dados da requisição e retorna um texto de resposta, o qual o front-end vai trabalhar da maneira que quiser.</p>
+
+<h3>REST e RESTful</h3>
+
+<p>REST (Representational State Transfer ou Transferência Representacional de Estado) é um estilo de arquitetura de API. Caso a API seja construída dentro dessa arquitetura ela é denominada RESTful.</p>
+
+<p>REST é o padrão das API's atuais e portanto é importante que nossas apis sejam criadas nesse padrão para conseguirmos harmonizar com outras.</p>
+
+<p>Recomendável a leitura <a href="https://www.ibm.com/br-pt/cloud/learn/rest-apis">desta documentação</a> da IBM sobre REST e RESTful.</p>
+
+<h3>O que é SPA</h3>
+
+<p>A grosso modo é uma aplicação que não faz o recarregamento da url para funcionar, mas sim trabalha com o carregamento dos dados no navegador a partir das respostas obtidas pelo framework de front-end a partir de suas requisições para o back-end.</p> 
+
+<p>Para exemplificar, ao abrirmos uma página SPA o front (React, Vue, ou Angular) envia uma requisição para a API (back) abrir a home, o back retorna os dados da home e o front trata de renderizar a página com esses dados recebidos. Ao clicar em um link nessa home o front novamente faz uma requisição pra o back que retornará dados ao front que serão trabalhados por este.</p>
+
+<h3>Verbos HTTP</h3>
+
+<p>Os mais utilizados são o GET, POST, PUT, DELETE, PATCH. Cada um tem sua função:</p>
+<ul>
+    <li>GET: resgatar dados</li>
+    <li>POST: enviar dados, consistir no banco de dados</li>
+    <li>PUT: atualizar um registro completamente</li>
+    <li>PATCH: atualiza o registro parcialmente</li>
+    <li>DELETE: deleta dados do banco</li>
+</ul>
